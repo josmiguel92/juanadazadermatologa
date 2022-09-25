@@ -3,9 +3,6 @@
     <nav-bar />
     <header-block />
     <features-block1 />
-    <div class="p-5">
-      Hola mundo
-    </div>
   </div>
 </template>
 

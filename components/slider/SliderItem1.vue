@@ -7,7 +7,7 @@
             DERMATOLOGÍA INTEGRAL
           </p>
         </div>
-        <h2 class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:text-center">
+        <h2 class="mb-5 font-sans text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl sm:leading-none md:text-center">
           Dra. Juana Teresa Daza Vergara<br class="hidden md:block">
           les da la Bienvenida
         </h2>
@@ -15,11 +15,11 @@
           Tenga acceso a profesionales de salud en cualquier momento
         </p>
         <div class="mb-10 text-center md:mb-16 lg:mb-20">
-          <a
-            href="/"
-            class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-          >
+          <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
             Learn more
+            <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+              <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+            </svg>
           </a>
         </div>
         <div class="flex flex-col items-center">

@@ -2,7 +2,7 @@
   <div>
     <VueSlickCarousel v-bind="settings">
       <slider-item-1 />
-      <slider-item-2 />
+      <!-- <slider-item-2 /> -->
       <slider-item-3 />
     </VueSlickCarousel>
   </div>
@@ -11,7 +11,7 @@
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import SliderItem1 from '~/components/slider/SliderItem1.vue'
-import SliderItem2 from '~/components/slider/SliderItem2.vue'
+// import SliderItem2 from '~/components/slider/SliderItem2.vue'
 import SliderItem3 from '~/components/slider/SliderItem3.vue'
 
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
@@ -20,7 +20,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: 'HomeSlider',
-  components: { VueSlickCarousel, SliderItem1, SliderItem2, SliderItem3 },
+  components: { VueSlickCarousel, SliderItem1, SliderItem3 },
   data () {
     return {
       settings: {

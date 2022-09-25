@@ -2,10 +2,10 @@
   <div class="mb-16">
     <HomeSlider />
 
-    <div class="relative px-4 sm:px-0">
-      <div class="absolute inset-0 bg-gray-100 h-1/2" />
+    <div class="relative px-4 sm:px-0 -mt-8">
+      <!-- <div class="absolute inset-0 bg-gray-100 h-1/2" /> -->
       <div class="relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md">
-        <div class="inline-block p-8 text-center">
+        <div class="inline-block p-8 text-center bg-purple-500">
           <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-indigo-50">
             <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
               <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
@@ -15,7 +15,7 @@
             Consejo del dia
           </p>
         </div>
-        <div class="inline-block p-8 text-center">
+        <div class="inline-block p-8 text-center  bg-blue-500">
           <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-indigo-50">
             <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
               <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
@@ -25,7 +25,7 @@
             Sabías que...
           </p>
         </div>
-        <div class="inline-block p-8 text-center">
+        <div class="inline-block p-8 text-center  bg-green-500">
           <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-indigo-50">
             <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
               <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />

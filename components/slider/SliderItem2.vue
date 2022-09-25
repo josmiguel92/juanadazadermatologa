@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-4 py-16 mx-auto sm:max-w-xl min-w-full md:px-24 lg:px-8 lg:py-20"
+    class="px-4 py-16 mx-auto sm:max-w-xl min-w-full md:px-24 lg:px-8 lg:py-20 bg-purple-200"
     style="background-image: url('https://cdn.pixabay.com/photo/2021/11/11/16/06/face-6786616_1280.jpg');"
   >
     <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -28,12 +28,12 @@
       </p>
     </div>
     <div class="flex items-center sm:justify-center">
-      <button
-        type="submit"
-        class="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-400 hover:bg-green-700 focus:shadow-outline focus:outline-none"
-      >
-        Get started
-      </button>
+      <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+        Learn more
+        <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+          <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
+        </svg>
+      </a>
     </div>
   </div>
 </template>

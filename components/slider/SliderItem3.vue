@@ -47,9 +47,9 @@
         </div>
         <div class="max-w-xl mb-6">
           <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            Let us handle<br class="hidden md:block">
-            your next
-            <span class="inline-block text-deep-purple-accent-400">destination</span>
+            Ofertas especiales y<br class="hidden md:block">
+
+            <span class="inline-block text-green-700">atención de calidad</span>
           </h2>
           <p class="text-base text-gray-700 md:text-lg">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
