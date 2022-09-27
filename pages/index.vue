@@ -4,7 +4,6 @@
     <header-block />
 
     <features-block1 />
-
   </div>
 </template>
 

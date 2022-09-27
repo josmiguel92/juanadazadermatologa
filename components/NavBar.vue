@@ -28,7 +28,7 @@
         </li>
 
         <li>
-          <t-button to='/about'>
+          <t-button to="/about">
             Agenda una cita
           </t-button>
         </li>
@@ -102,7 +102,7 @@
                 </li>
 
                 <li>
-                  <t-button to='/about'>
+                  <t-button to="/about">
                     Agenda una cita
                   </t-button>
                 </li>
