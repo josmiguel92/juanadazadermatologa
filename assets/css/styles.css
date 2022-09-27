@@ -1,0 +1,19 @@
+.page-enter-active,
+.page-leave-active {
+  opacity: 1;
+  transition: opacity 1s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transition: opacity 1s;
+
+}
+
+/****/
+.slick-dots-hero {
+  /* position: relative !important; */
+  display: block;
+  bottom: 8rem !important;
+
+}

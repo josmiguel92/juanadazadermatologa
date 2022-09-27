@@ -26,11 +26,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ['~/assets/css/styles.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '@/plugins/aos', mode: 'client' },
+    { src: "@/plugins/vue-tailwind" }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -65,5 +66,25 @@ export default {
         autoprefixer: {}
       }
     }
+  },
+
+  purgeCSS: {
+    whitelist: ['aos-init', 'aos-animate', 'data-aos-delay', 'data-aos-duration', 'fade-up', 'zoom-in'],
+
+    mode: 'postcss',
+    extractors: [
+      {
+        extractor(content) {
+          return content.match(/[\w-.:/]+(?<!:)/g)
+        },
+        extensions: ['html', 'vue', 'js']
+      },
+      {
+        extractor(content) {
+          return content.match(/[A-Za-z0-9-_:/]+/g)
+        },
+        extensions: ['js']
+      },
+    ]
   }
 }
