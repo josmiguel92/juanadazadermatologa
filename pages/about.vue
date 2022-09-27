@@ -2,9 +2,7 @@
   <div>
     <nav-bar />
     <header-block />
-
     <features-block1 />
-
   </div>
 </template>
 

@@ -2,37 +2,55 @@
   <div class="mb-16">
     <HomeSlider />
 
-    <div class="relative px-4 sm:px-0 -mt-8">
+    <!-- <div data-aos="fade-up" data-aos-delay="300">
+      <img :src="`${$config.BASE_URL}/logo.png`" class="w-32">
+      <img :src="`${$config.BASE_URL}/logo.png`" class="w-32" data-aos="zoom-in" data-aos-delay="500">
+    </div>
+
+    <div data-aos="zoom-in-right" data-aos-delay="300">
+      <img :src="`${$config.BASE_URL}/logo.png`" class="w-32">
+      <img :src="`${$config.BASE_URL}/logo.png`" class="w-32" data-aos="zoom-out-right" data-aos-delay="500">
+    </div> -->
+
+    <div class="relative px-4 sm:px-0 -mt-24">
       <!-- <div class="absolute inset-0 bg-gray-100 h-1/2" /> -->
-      <div class="relative grid mx-auto overflow-hidden bg-white divide-y rounded shadow sm:divide-y-0 sm:divide-x sm:max-w-screen-sm sm:grid-cols-3 lg:max-w-screen-md">
-        <div class="inline-block p-8 text-center bg-purple-500">
-          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-indigo-50">
-            <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
-            </svg>
+      <div class="relative grid mx-auto overflow-hidden rounded sm:w-2/3 sm:grid-cols-3 lg:max-w-screen-lg">
+        <div class="inline-block px-14 py-16 text-center bg-primary  animate__fadeInUp animate__animated delay-100 animate__delay-1s">
+          <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
+            <img :src="`${$config.BASE_URL}/icons/tips-w.png`" class="w-32">
+
           </div>
-          <p class="font-bold tracking-wide text-gray-800">
+          <p class="font-bold tracking-wide text-white mb-6 uppercase">
             Consejo del dia
           </p>
-        </div>
-        <div class="inline-block p-8 text-center  bg-blue-500">
-          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-indigo-50">
-            <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
-            </svg>
-          </div>
-          <p class="font-bold tracking-wide text-gray-800">
-            Sabías que...
+          <p class="text-white">
+            Nunca olvides el protector solar recuerda usarlo cada 3 a 4 horas en cualquier lugar!
           </p>
         </div>
-        <div class="inline-block p-8 text-center  bg-green-500">
-          <div class="flex items-center justify-center w-12 h-12 mx-auto mb-4 rounded-full bg-indigo-50">
-            <svg class="w-10 h-10 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-              <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" points="29 13 14 29 25 29 23 39 38 23 27 23" />
-            </svg>
+        <div class="inline-block px-14 py-16 text-center bg-secondary animate__fadeInUp animate__animated delay-200 animate__delay-2s">
+          <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
+            <img :src="`${$config.BASE_URL}/icons/medic-w.png`" class="w-32">
+
           </div>
-          <p class="font-bold tracking-wide text-gray-800">
-            Frases Motivacionales
+          <p class="font-bold tracking-wide text-white mb-6 uppercase">
+            sabias que
+          </p>
+          <p class="text-white">
+            ¿bañarte muchas veces al dia puede dañar tu piel?
+            <br>
+            Si! Esto se debe a que eliminamos de nuestra piel el manto acido que nos ayuda a evitar infecciones.
+          </p>
+        </div>
+        <div class="inline-block px-14 py-16 text-center bg-accent animate__fadeInUp animate__animated delay-300 animate__delay-3s">
+          <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
+            <img :src="`${$config.BASE_URL}/icons/girl-w.png`" class="w-32">
+
+          </div>
+          <p class="font-bold tracking-wide text-white mb-6 uppercase">
+            frases motivacionales
+          </p>
+          <p class="text-white">
+            No hay piel perfecta hay pieles sanas
           </p>
         </div>
       </div>
@@ -40,36 +58,5 @@
   </div>
 </template>
 <script>
-import Vue from 'vue'
-import VueTailwind from 'vue-tailwind'
 
-import TInput from 'vue-tailwind/dist/t-input'
-import TButton from 'vue-tailwind/dist/t-button'
-
-const settings = {
-  't-input': {
-    component: TInput,
-    props: {
-      classes: 'block w-full px-3 py-2 text-black placeholder-gray-400 transition duration-100 ease-in-out bg-white border border-gray-300 rounded shadow-sm focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50 disabled:opacity-50 disabled:cursor-not-allowed'
-      // ...More settings
-    }
-  },
-  't-button': {
-    component: TButton,
-    props: {
-      classes: 'block px-4 py-2 text-white transition duration-100 ease-in-out bg-blue-500 border border-transparent rounded shadow-sm hover:bg-blue-600 focus:border-blue-500 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-opacity-50  disabled:opacity-50 disabled:cursor-not-allowed'
-      // ...More settings
-    }
-  }
-
-}
-
-Vue.use(VueTailwind, settings)
-
-export default {
-
-  data () {
-    return {}
-  }
-}
 </script>

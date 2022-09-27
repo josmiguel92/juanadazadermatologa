@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+    class="px-4 py-5 w-full md:px-24 lg:px-8 absolute z-10"
   >
     <div class="relative flex items-center justify-between">
       <a
@@ -9,7 +9,7 @@
         title="Company"
         class="inline-flex items-center"
       >
-        <img :src="`${$config.BASE_URL}/logo.png`" class="w-32">
+        <img :src="`${$config.BASE_URL}/logo.png`" class="w-32 animate__heartBeat animate__animated">
         <div class="flex flex-col">
           <span
             class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
@@ -23,19 +23,14 @@
             :href="item.path"
             :aria-label="item.name"
             :title="item.name"
-            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
+            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-secondary hover:underline decoration-secondary decoration-2 underline-offset-8"
           >{{ item.name }}</a>
         </li>
 
         <li>
-          <a
-            href="/"
-            class="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-500 hover:bg-green-700 focus:shadow-outline focus:outline-none"
-            aria-label="Agenda una cita"
-            title="Agenda una cita"
-          >
+          <t-button to='/about'>
             Agenda una cita
-          </a>
+          </t-button>
         </li>
       </ul>
       <div class="lg:hidden">
@@ -107,14 +102,9 @@
                 </li>
 
                 <li>
-                  <a
-                    href="/"
-                    class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-500 hover:bg-green-700 focus:shadow-outline focus:outline-none"
-                    aria-label="Sign up"
-                    title="Sign up"
-                  >
+                  <t-button to='/about'>
                     Agenda una cita
-                  </a>
+                  </t-button>
                 </li>
               </ul>
             </nav>
@@ -131,10 +121,11 @@ export default {
     return {
       isMenuOpen: false,
       menuItems: [
-        { name: 'Quiénes somos', path: '/' },
+        { name: 'Quiénes somos', path: '/about' },
         { name: 'Servicios', path: '/' },
-        { name: 'Misión y Visión', path: '/' },
-        { name: 'Informes de Salud', path: '/' }
+        // { name: 'Misión y Visión', path: '/' },
+        { name: 'Informes de Salud', path: '/' },
+        { name: 'Contácto', path: '/' }
 
       ]
     }
