@@ -9,7 +9,7 @@
         title="Company"
         class="inline-flex items-center"
       >
-        <img :src="`${$config.BASE_URL}/logo.png`" class="w-32 animate__heartBeat animate__animated">
+        <img :src="`${$config.BASE_URL}/logo.png`" class="w-32">
         <div class="flex flex-col">
           <span
             class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
@@ -17,7 +17,7 @@
           <span class="ml-2 text-sm  tracking-wide text-gray-800 uppercase">Dermatóloga</span>
         </div>
       </a>
-      <ul class="flex items-center hidden space-x-8 lg:flex">
+      <ul class="flex items-center hidden space-x-8 lg:flex ">
         <li v-for="(item, index) in menuItems" :key="index">
           <a
             :href="item.path"
