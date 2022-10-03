@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar position="absolute"/>
+    <nav-bar position="absolute" />
     <header-block />
 
     <EspecialidadesHome />

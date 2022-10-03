@@ -9,14 +9,14 @@
         </h2>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-          <feature-card v-for="(item, index) in items"
+          <feature-card
+            v-for="(item, index) in items"
             :key="index"
             :image="item.image"
             :name="item.name"
             :path="item.path"
             :text="item.text"
           />
-
         </div>
       </div>
     </div>
