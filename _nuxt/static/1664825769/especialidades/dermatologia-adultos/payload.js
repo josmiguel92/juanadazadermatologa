@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/especialidades/dermatologia-adultos", {data:[{}],fetch:{},mutations:void 0});
