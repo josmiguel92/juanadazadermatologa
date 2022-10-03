@@ -1,6 +1,7 @@
 <template>
   <div
-    class="px-4 py-5 w-full md:px-24 lg:px-8 absolute z-10"
+    class="px-4 py-5 w-full md:px-24 lg:px-8 z-10"
+    :class="position"
   >
     <div class="relative flex items-center justify-between">
       <a
@@ -117,6 +118,12 @@
 
 <script>
 export default {
+  props: {
+    position: {
+      type: String,
+      default: 'relative'
+    }
+  },
   data () {
     return {
       isMenuOpen: false,
