@@ -6,33 +6,23 @@
           Nos preocupamos por ti!
 
         </span>
-        <div class="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100"></div>
+        <div class="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
       </h2>
       <p class="text-gray-700 lg:text-sm lg:max-w-md">
         Este sitio web te ayudara a entender de forma clara las enfermedades de la piel, uñas y cabello, ademas de aclararte dudas de procedimiento esteticos y medicos, es decir que hacer antes, durante y despues de estos.
-        <br class="hidden md:block" />
+        <br class="hidden md:block">
         <span class="font-bold">te brindaremos la mejor asesoria con mucho amor!</span>
       </p>
-
     </div>
     <div class="grid gap-6 row-gap-5 mb-8 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
-      <a  v-for="(item, index) in featuresItems"
-        :key="index"
-        :href="item.path"
-         aria-label="View Item">
-        <div class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
-          <img class="object-cover w-full h-56 md:h-64 xl:h-80" :src="item.image" alt="" />
-          <div class="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
-            <!-- <p class="text-sm font-medium tracking-wide text-white">
-               {{ item.text }}
-            </p> -->
-            <p class="mb-4 text-lg font-bold text-gray-100">{{ item.name }}</p>
-            <p class="text-sm tracking-wide text-gray-300">
-              {{ item.text }}
-            </p>
-          </div>
-        </div>
-      </a>
+
+      <FeatureCard v-for="(item, index) in featuresItems"
+      :key="index"
+      :name="item.name"
+      :path="item.path"
+      :image="item.image"
+      :text="item.text"
+      />
 
     </div>
     <!-- <div class="text-center">
@@ -46,11 +36,15 @@
   </div>
 </template>
 <script>
+import FeatureCard from '~/components/common/FeatureCard.vue'
+
 export default {
+  components: { FeatureCard },
+
   data () {
     return {
       featuresItems: [
-        { name: 'Dermatologia Clínica Pediátrica', path: '/', image: 'https://media.istockphoto.com/photos/caucasian-mother-applying-healthy-skin-care-moisturizing-cream-on-picture-id1302810320?s=612x612', text: 'Diagnostico y tratamiento integral de enfermedades dermatológicas pediátricas' },
+        { name: 'Dermatologia Clínica Pediátrica', path: '/especialidades/dermatologia-pediatrica', image: 'https://media.istockphoto.com/photos/caucasian-mother-applying-healthy-skin-care-moisturizing-cream-on-picture-id1302810320?s=612x612', text: 'Diagnostico y tratamiento integral de enfermedades dermatológicas pediátricas' },
         { name: 'Dermatologia Clínica Adultos', path: '/', image: 'https://media.istockphoto.com/photos/attractive-dermatologist-in-white-coat-examining-skin-of-patient-in-picture-id1190138450?s=612x612', text: 'Diagnóstico y tratamiento integral de enfermedades dermatológicas en adultos' },
         { name: 'Dermatología Estética', path: '/', image: 'https://media.istockphoto.com/photos/dermapen-skin-needling-treatment-picture-id1271011637?s=612x612', text: 'Tratamientos avanzados y eficaces (tu piel en manos de expertos)' },
         { name: 'Toma de biopsias y procedimientos menores', path: '/', image: 'https://cdn.pixabay.com/photo/2021/09/28/15/55/laser-treatment-6664875_1280.jpg', text: 'Para llegar a diagnosticos acertados y resolver definitivamente algunas patologias. ' }
@@ -58,4 +52,5 @@ export default {
     }
   }
 }
+
 </script>

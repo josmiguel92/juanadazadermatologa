@@ -4,17 +4,15 @@
     <header-block />
 
     <EspecialidadesHome />
-    <features-block1 />
   </div>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
 import HeaderBlock from '~/components/HeaderBlock.vue'
-import FeaturesBlock1 from '~/components/features/FeaturesBlock1.vue'
 import EspecialidadesHome from '~/components/features/EspecialidadesHome.vue'
 export default {
   name: 'IndexPage',
-  components: { NavBar, HeaderBlock, FeaturesBlock1, EspecialidadesHome }
+  components: { NavBar, HeaderBlock, EspecialidadesHome }
 }
 </script>
