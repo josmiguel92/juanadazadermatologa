@@ -1,1 +1,0 @@
-__NUXT_JSONP__("manifest.js", {routes:["\u002Fespecialidades\u002Fdermatologia-adultos","\u002F","\u002Fabout","\u002Fespecialidades\u002Fdermatologia-pediatrica"]})
