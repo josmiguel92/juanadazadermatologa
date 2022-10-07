@@ -2,10 +2,10 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/juanadazadermatologa/'
+    base: '/'
   },
   publicRuntimeConfig: {
-    BASE_URL: '/juanadazadermatologa'
+    BASE_URL: '/'
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head

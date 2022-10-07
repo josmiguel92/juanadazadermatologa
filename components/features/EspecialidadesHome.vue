@@ -42,10 +42,15 @@ export default {
     //  TODO: change paths
     return {
       featuresItems: [
-        { name: 'Dermatologia Clínica Pediátrica', path: '/juanadazadermatologa/especialidades/dermatologia-pediatrica', image: 'https://media.istockphoto.com/photos/caucasian-mother-applying-healthy-skin-care-moisturizing-cream-on-picture-id1302810320?s=612x612', text: 'Diagnostico y tratamiento integral de enfermedades dermatológicas pediátricas' },
-        { name: 'Dermatologia Clínica Adultos', path: '/juanadazadermatologa/especialidades/dermatologia-adultos', image: 'https://media.istockphoto.com/photos/attractive-dermatologist-in-white-coat-examining-skin-of-patient-in-picture-id1190138450?s=612x612', text: 'Diagnóstico y tratamiento integral de enfermedades dermatológicas en adultos' },
-        { name: 'Dermatología Estética', path: '/juanadazadermatologa/', image: 'https://media.istockphoto.com/photos/dermapen-skin-needling-treatment-picture-id1271011637?s=612x612', text: 'Tratamientos avanzados y eficaces (tu piel en manos de expertos)' },
-        { name: 'Toma de biopsias y procedimientos menores', path: '/juanadazadermatologa', image: 'https://cdn.pixabay.com/photo/2021/09/28/15/55/laser-treatment-6664875_1280.jpg', text: 'Para llegar a diagnosticos acertados y resolver definitivamente algunas patologias. ' }
+        {
+          name: 'Dermatologia Clínica Pediátrica',
+          path: '/especialidades/dermatologia-pediatrica',
+          image: 'https://media.istockphoto.com/photos/baby-boy-at-dermatologist-for-mole-checkup-picture-id937117200?k=20&m=937117200&s=612x612&w=0&h=mDY3iMbwTH7QD8el6wyD_tgYakPOJxZnznP57H-Yc0s=',
+          text: 'Diagnostico y tratamiento integral de enfermedades dermatológicas pediátricas'
+        },
+        { name: 'Dermatologia Clínica Adultos', path: '/especialidades/dermatologia-adultos', image: 'https://media.istockphoto.com/photos/attractive-dermatologist-in-white-coat-examining-skin-of-patient-in-picture-id1190138450?s=612x612', text: 'Diagnóstico y tratamiento integral de enfermedades dermatológicas en adultos' },
+        { name: 'Dermatología Estética', path: '/', image: 'https://media.istockphoto.com/photos/dermapen-skin-needling-treatment-picture-id1271011637?s=612x612', text: 'Tratamientos avanzados y eficaces (tu piel en manos de expertos)' },
+        { name: 'Toma de biopsias y procedimientos menores', path: '/, image: 'https://cdn.pixabay.com/photo/2021/09/28/15/55/laser-treatment-6664875_1280.jpg', text: 'Para llegar a diagnosticos acertados y resolver definitivamente algunas patologias. ' }
       ]
     }
   }
