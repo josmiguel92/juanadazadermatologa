@@ -17,7 +17,7 @@
       <div class="relative grid mx-auto overflow-hidden rounded sm:w-2/3 sm:grid-cols-3 lg:max-w-screen-lg">
         <div class="inline-block px-14 py-16 text-center bg-primary  animate__fadeInUp animate__animated delay-100 animate__delay-1s">
           <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
-            <img :src="`${$config.BASE_URL}/icons/tips-w.png`" class="w-32">
+            <img src="/icons/tips-w.png" class="w-32">
           </div>
           <p class="font-bold tracking-wide text-white mb-6 uppercase">
             Consejo del dia
@@ -28,7 +28,7 @@
         </div>
         <div class="inline-block px-14 py-16 text-center bg-secondary animate__fadeInUp animate__animated delay-200 animate__delay-2s">
           <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
-            <img :src="`${$config.BASE_URL}/icons/medic-w.png`" class="w-32">
+            <img src="/icons/medic-w.png" class="w-32">
           </div>
           <p class="font-bold tracking-wide text-white mb-6 uppercase">
             sabias que
@@ -41,7 +41,7 @@
         </div>
         <div class="inline-block px-14 py-16 text-center bg-accent animate__fadeInUp animate__animated delay-300 animate__delay-3s">
           <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
-            <img :src="`${$config.BASE_URL}/icons/girl-w.png`" class="w-32">
+            <img src="/icons/girl-w.png" class="w-32">
           </div>
           <p class="font-bold tracking-wide text-white mb-6 uppercase">
             frases motivacionales

@@ -1,7 +1,7 @@
 <template>
   <section class="text-gray-600 body-font h-screen w-screen bg-accent relative">
     <div class="absolute w-full h-screen">
-      <img :src="`${$config.BASE_URL}/img/cubafoto.jpg`" class=" w-full h-full object-cover object-center brightness-75">
+      <img src="/img/cubafoto.jpg" class=" w-full h-full object-cover object-center brightness-75">
     </div>
 
     <div class="container px-12 py-36 mx-auto flex h-screen relative animate__fadeInUp animate__animated">
