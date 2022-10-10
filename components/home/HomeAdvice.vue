@@ -11,7 +11,7 @@
               loading="lazy"
               alt="Photo by Martin Sanchez"
               class="w-full h-full object-cover object-center"
-            />
+            >
           </div>
         </div>
 
@@ -21,7 +21,7 @@
           <h1
             class="text-secondary text-2xl sm:text-3xl font-bold text-center md:text-left mb-4 md:mb-6"
           >
-            CUIDA TU PIEL!<br />
+            CUIDA TU PIEL!<br>
             ELLA TE REPRESENTARA SIEMPRE
           </h1>
 
@@ -32,22 +32,20 @@
             consultar a nuestro dermatologo.
           </p>
           <p class="text-gray-500 sm:text-lg font-medium">
-            <span class="text-primary font-extrabold">A</span>simetria<br />
-            <span class="text-secondary font-extrabold">B</span>ordes<br />
-            <span class="text-accent font-extrabold">C</span>olor<br />
-            <span class="text-primary font-extrabold">D</span>iametro<br />
+            <span class="text-primary font-extrabold">A</span>simetria<br>
+            <span class="text-secondary font-extrabold">B</span>ordes<br>
+            <span class="text-accent font-extrabold">C</span>olor<br>
+            <span class="text-primary font-extrabold">D</span>iametro<br>
             <span class="text-secondary font-extrabold">E</span>volución
           </p>
-           <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 mt-4">
-
+          <p class="text-gray-500 sm:text-lg mb-6 md:mb-8 mt-4">
             <span class="text-accent font-bold">
-            Consejo:
+              Consejo:
             </span>
-          asistir a tu dermatologo para deteccion temprana
+            asistir a tu dermatologo para deteccion temprana
             cada 2 años a partir de los 25 años
-            <br /><br />
+            <br><br>
           </p>
-
         </div>
       </div>
     </div>

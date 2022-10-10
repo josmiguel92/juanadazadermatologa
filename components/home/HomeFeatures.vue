@@ -6,10 +6,10 @@
           <svg viewBox="0 0 52 24" fill="currentColor" class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
             <defs>
               <pattern id="903f4a9e-7ac3-441c-9613-04c15fcc0a14" x="0" y="0" width=".135" height=".30">
-                <circle cx="1" cy="1" r=".7"></circle>
+                <circle cx="1" cy="1" r=".7" />
               </pattern>
             </defs>
-            <rect fill="url(#903f4a9e-7ac3-441c-9613-04c15fcc0a14)" width="52" height="24"></rect>
+            <rect fill="url(#903f4a9e-7ac3-441c-9613-04c15fcc0a14)" width="52" height="24" />
           </svg>
           <span class="relative text-white">Todo</span>
         </span>
@@ -20,16 +20,15 @@
       </p>
     </div>
     <div class="grid grid-cols-2 gap-5 row-gap-6 mb-2 sm:grid-cols-3 lg:grid-cols-6">
-
-      <div class="text-center" v-for="(item, index) in items" :key="index">
+      <div v-for="(item, index) in items" :key="index" class="text-center">
         <div class="flex items-center justify-center w-16 h-16 mx-auto rounded-full sm:w-24 sm:h-24">
           <img :src="item.image" class="w-20 h-20">
         </div>
-        <h6 class="mb-2 leading-5 uppercase text-white">{{ item.name }}</h6>
+        <h6 class="mb-2 leading-5 uppercase text-white">
+          {{ item.name }}
+        </h6>
       </div>
-
     </div>
-
   </div>
 </template>
 <script>

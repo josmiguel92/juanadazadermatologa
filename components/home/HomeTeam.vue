@@ -1,33 +1,92 @@
 <template>
-  <div class="relative bg-blue-400" style="background: radial-gradient(circle, rgb(255, 255, 255) 20%, rgba(0, 0, 0, 0) 60%), url('/img/bg-home-team.jpeg')">
-    <div class="absolute inset-x-0 bottom-0">
-      <svg viewBox="0 0 224 12" fill="currentColor" class="w-full -mb-1 text-primary" preserveAspectRatio="none">
-        <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z"></path>
-      </svg>
-    </div>
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div class="relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center items-center flex flex-col">
-        <img src="/logo.png" class="w-40 my-4">
-        <h2 class="mb-8 font-sans text-3xl font-bold tracking-tight text-black sm:text-4xl sm:leading-none">
-          Acerca de nosotros
+  <div class="bg-white py-6 sm:py-8 lg:py-12">
+    <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
+      <!-- text - start -->
+      <div class="mb-10 md:mb-16">
+        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">
+          Conozca a nuestro equipo
         </h2>
-        <p class="mb-6 text-base md:text-lg">
-          Estamos enfocados en brindar servicios de calidad tanto humana como profesional, contamos con Una fuerte convicción y vocación  de servicio que nos mueve a realizar diferentes acciones para generar capacidades y habilidades que den como resultados cambios sociales que contribuyan a mejorar la vida de las personas. Brindamos un servicio eficaz, eficiente y oportuno, velando principalmente por el bienestar, confort y conveniencia de nuestros usuarios.
-        </p>
 
-        <p class="my-6 text-2xl">
-          ¡Lo hacemos con amor!
+        <p class="max-w-screen-md  text-2xl text-gray-500 text-center mx-auto">
+          Trabajamos con amor
         </p>
-      <div class="flex gap-6 m-8">
-        <t-button>Reservar una cita </t-button>
-        <t-button class="bg-secondary">
-          Registrarse
-        </t-button>
       </div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="currentColor">
-            <path d="M10.293,3.293,6,7.586,1.707,3.293A1,1,0,0,0,.293,4.707l5,5a1,1,0,0,0,1.414,0l5-5a1,1,0,1,0-1.414-1.414Z"></path>
-          </svg>
+      <!-- text - end -->
+
+      <div class="grid grid-cols-2 gap-x-4 lg:gap-x-8 gap-y-12 lg:gap-y-12">
+        <!-- person - start -->
+        <div v-for="(person, index) in team" :key="index">
+          <div class="h-56 sm:h-60 md:h-96 bg-gray-100 overflow-hidden rounded-lg shadow-lg mb-2 sm:mb-4">
+            <img :src="person.image" loading="lazy" :alt="person.name" class="w-full h-full object-cover object-top">
+          </div>
+
+          <div>
+            <div class="text-secondary md:text-lg font-bold">
+              {{ person.name }}
+            </div>
+            <p class="text-gray-500 text-sm md:text-base mb-3 md:mb-4">
+              {{ person.bio }}
+            </p>
+
+            <!-- social - start -->
+            <div class="flex">
+              <div class="flex gap-4">
+
+                <a href="#" target="_blank" class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+
+                  <svg
+                  class="w-5 h-5 inline-block"
+                    width="26"
+                    height="26"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                    id="Flat"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.2">
+                      <path d="M172,36H84A47.99987,47.99987,0,0,0,36,84v88a47.99988,47.99988,0,0,0,48,48h88a47.99988,47.99988,0,0,0,48-48V84A47.99987,47.99987,0,0,0,172,36ZM128,168a40,40,0,1,1,40-40A40.0001,40.0001,0,0,1,128,168Z"/>
+                    </g>
+                    <g>
+                      <path d="M128,80a48,48,0,1,0,48,48A48.05436,48.05436,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32.03667,32.03667,0,0,1,128,160Z"/>
+                      <path d="M172,28H84A56.06353,56.06353,0,0,0,28,84v88a56.06353,56.06353,0,0,0,56,56h88a56.06353,56.06353,0,0,0,56-56V84A56.06353,56.06353,0,0,0,172,28Zm40,144a40.04521,40.04521,0,0,1-40,40H84a40.04521,40.04521,0,0,1-40-40V84A40.04521,40.04521,0,0,1,84,44h88a40.04521,40.04521,0,0,1,40,40Z"/>
+                      <circle cx="180" cy="76" r="12"/>
+                    </g>
+                  </svg>
+                  {{ person.instagram}}
+                </a>
+              </div>
+            </div>
+          <!-- social - end -->
+          </div>
+        </div>
+        <!-- person - end -->
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      team: [
+        {
+          name: 'Dra. Juana T. Daza Vergara',
+          image: '/img/team/juanita.jpg',
+          bio: 'Hola Mundo',
+          instagram: '@'
+        },
+        {
+          name: 'Dra. Souhair Aoun Ortiz',
+          image: '/img/team/susu.jpg',
+          bio: 'Hola, me llamo Souhair Aoun Ortiz, Soy Dominico-Libanesa, Dermatóloga Clínico Quirúrgico y Estético de profesión y vocación, Soy egresada de la Universidad de Ciencias Médicas de la Habana, realicé mis estudios de Grado en la Universidad Tecnológica de Santiago, en República Dominicana, actualmente Me encuentro laborando en Centro Médico Dr. Bournigal e Instituto Dermatológico y Cirugía de piel, Unidad Norte, Puerto Plata.',
+          instagram: '@dra.souhairaoun '
+        }
+      ]
+    }
+  }
+}
+</script>
+
+<style>
+
+</style>
