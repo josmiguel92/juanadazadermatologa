@@ -29,11 +29,11 @@ export default {
         infinite: true,
         rows: 1,
         initialSlide: 0,
-        speed: 800,
+        speed: 1200,
         slidesToShow: 1,
         slidesToScroll: 1,
         swipeToSlide: true,
-        // arrows: true,
+        arrows: false,
         autoplay: true,
         fade: true
       }
