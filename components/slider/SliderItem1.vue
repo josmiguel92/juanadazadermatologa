@@ -7,10 +7,9 @@
     <div class="container px-12 py-36 mx-auto flex h-screen relative animate__fadeInUp animate__animated">
       <div class="lg:w-2/3 flex flex-col items-start justify-end  mx-auto">
         <h1 class="sm:pr-16 text-2xl font-medium title-font text-white">
-          <span class="font-extrabold">DRA. JUANA TERESA DAZA VERGARA</span>
-          DERMATOLOGIA INTEGRAL LES DA LA BIENVENIDA!
+          <span class="font-extrabold">“Dra Juana T. Daza Vergara</span><br>
+          Dermatología integral, les da la bienvenida”
         </h1>
-        <t-button>Hello </t-button>
       </div>
     </div>
   </section>

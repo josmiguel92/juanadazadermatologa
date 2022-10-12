@@ -13,9 +13,9 @@
         <img src="/logo.png" class="w-32">
         <div class="flex flex-col">
           <span
-            class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase"
+            class="ml-2 text-xl font-bold tracking-wide text-white uppercase"
           >Dra Juana Daza</span>
-          <span class="ml-2 text-sm  tracking-wide text-gray-800 uppercase">Dermatóloga</span>
+          <span class="ml-2 text-sm  tracking-wide text-white uppercase">Dermatóloga</span>
         </div>
       </a>
       <ul class="flex items-center hidden space-x-8 lg:flex ">
@@ -24,7 +24,7 @@
             :href="item.path"
             :aria-label="item.name"
             :title="item.name"
-            class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-secondary hover:underline decoration-secondary decoration-2 underline-offset-8"
+            class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-secondary hover:underline decoration-secondary decoration-2 underline-offset-8"
           >{{ item.name }}</a>
         </li>
 
@@ -98,7 +98,7 @@
                     :href="item.path"
                     :aria-label="item.name"
                     :title="item.name"
-                    class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-500"
+                    class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-primary"
                   >{{ item.name }}</a>
                 </li>
 
