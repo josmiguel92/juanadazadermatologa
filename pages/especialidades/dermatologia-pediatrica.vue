@@ -26,7 +26,7 @@
         <feature-card
           v-for="(item, index) in posts"
           :key="index"
-          :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image"
+          :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
           :name="item.title"
           path="#"
           :text="item.desc"
