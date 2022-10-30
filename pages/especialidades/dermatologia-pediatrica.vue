@@ -24,12 +24,12 @@
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
         <feature-card
-          v-for="(item, index) in items"
+          v-for="(item, index) in posts"
           :key="index"
-          :image="item.image"
-          :name="item.name"
-          :path="item.path"
-          :text="item.text"
+          :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image"
+          :name="item.title"
+          path="#"
+          :text="item.desc"
         />
       </div>
     </div>
@@ -37,8 +37,12 @@
 </template>
 
 <script>
+// import PocketBase from 'pocketbase'
 import NavBar from '~/components/NavBar.vue'
 import FeatureCard from '~/components/common/FeatureCard.vue'
+
+const PocketBase = require('pocketbase/dist/pocketbase.cjs')
+
 // import HeaderBlock from '~/components/HeaderBlock.vue'
 // import FeaturesBlock1 from '~/components/features/FeaturesBlock1.vue'
 export default {
@@ -47,17 +51,18 @@ export default {
 
   data () {
     return {
-      items: [
-        { name: 'Dermatologia Clínica Pediátrica', path: '/especialidades/dermatologia-pediatrica', image: 'https://media.istockphoto.com/photos/caucasian-mother-applying-healthy-skin-care-moisturizing-cream-on-picture-id1302810320?s=612x612', text: 'Diagnostico y tratamiento integral de enfermedades dermatológicas pediátricas' },
-        { name: 'Dermatologia Clínica Adultos', path: '/', image: 'https://media.istockphoto.com/photos/attractive-dermatologist-in-white-coat-examining-skin-of-patient-in-picture-id1190138450?s=612x612', text: 'Diagnóstico y tratamiento integral de enfermedades dermatológicas en adultos' },
-        { name: 'Dermatología Estética', path: '/', image: 'https://media.istockphoto.com/photos/dermapen-skin-needling-treatment-picture-id1271011637?s=612x612', text: 'Tratamientos avanzados y eficaces (tu piel en manos de expertos)' },
-        { name: 'Toma de biopsias y procedimientos menores', path: '/', image: 'https://cdn.pixabay.com/photo/2021/09/28/15/55/laser-treatment-6664875_1280.jpg', text: 'Para llegar a diagnosticos acertados y resolver definitivamente algunas patologias. ' },
-        { name: 'Dermatologia Clínica Pediátrica', path: '/especialidades/dermatologia-pediatrica', image: 'https://media.istockphoto.com/photos/caucasian-mother-applying-healthy-skin-care-moisturizing-cream-on-picture-id1302810320?s=612x612', text: 'Diagnostico y tratamiento integral de enfermedades dermatológicas pediátricas' },
-        { name: 'Dermatologia Clínica Adultos', path: '/', image: 'https://media.istockphoto.com/photos/attractive-dermatologist-in-white-coat-examining-skin-of-patient-in-picture-id1190138450?s=612x612', text: 'Diagnóstico y tratamiento integral de enfermedades dermatológicas en adultos' },
-        { name: 'Dermatología Estética', path: '/', image: 'https://media.istockphoto.com/photos/dermapen-skin-needling-treatment-picture-id1271011637?s=612x612', text: 'Tratamientos avanzados y eficaces (tu piel en manos de expertos)' },
-        { name: 'Toma de biopsias y procedimientos menores', path: '/', image: 'https://cdn.pixabay.com/photo/2021/09/28/15/55/laser-treatment-6664875_1280.jpg', text: 'Para llegar a diagnosticos acertados y resolver definitivamente algunas patologias. ' }
-      ]
+      posts: this.posts
     }
+  },
+
+  async fetch () {
+    const client = new PocketBase('https://base.altaxi.app')
+    const records = await client.records.getFullList('juana_patologia_pediatrica', 200 /* batch size */, {
+      sort: '-created'
+    })
+    console.log({ client, records })
+    this.posts = records
+    this.baseUrl = client.baseUrl + '/api/files/'
   }
 
 }
