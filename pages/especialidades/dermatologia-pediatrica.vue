@@ -58,7 +58,7 @@ export default {
   async fetch () {
     const client = new PocketBase('https://base.altaxi.app')
     const records = await client.records.getFullList('juana_patologia_pediatrica', 200 /* batch size */, {
-      sort: '-created'
+      sort: 'title'
     })
     console.log({ client, records })
     this.posts = records
