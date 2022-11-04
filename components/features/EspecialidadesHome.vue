@@ -56,13 +56,13 @@ export default {
         },
         {
           name: 'Dermatología Estética',
-          path: '/',
+          path: '/especialidades/dermatologia-estetica',
           image: '/img/derma-estetica.jpg',
           text: 'Tratamientos avanzados y eficaces (tu piel en manos de expertos)'
         },
         {
           name: 'Toma de biopsias y procedimientos menores',
-          path: '/',
+          path: '/especialidades/dermatologia-procedimientos',
           image: '/img/procedimientos.jpg',
           text: 'Para llegar a diagnosticos acertados y resolver definitivamente algunas patologias. '
         }
