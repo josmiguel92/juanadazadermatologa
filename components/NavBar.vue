@@ -132,6 +132,7 @@ export default {
         { name: 'Servicios', path: '/' },
         // { name: 'Misión y Visión', path: '/' },
         { name: 'Informes de Salud', path: '/' },
+        { name: 'Tienda dermatológica', path: '/' },
         { name: 'Contácto', path: '/' }
 
       ]
