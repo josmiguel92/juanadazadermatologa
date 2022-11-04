@@ -10,12 +10,12 @@
         title="Company"
         class="inline-flex items-center"
       >
-        <img src="/logo.png" class="w-32">
+        <img src="/logo.png" class="w-28">
         <div class="flex flex-col">
           <span
             class="ml-2 text-xl font-bold tracking-wide text-white uppercase"
-          >Dra Juana Daza</span>
-          <span class="ml-2 text-sm  tracking-wide text-white uppercase">Dermatóloga</span>
+          >Juana T. Daza Vergara</span>
+          <span class="ml-2 text-sm  tracking-wide text-white">Dermatóloga Clinico-quir&uacute;rgica y est&eacute;tica</span>
         </div>
       </a>
       <ul class="flex items-center hidden space-x-8 lg:flex ">
