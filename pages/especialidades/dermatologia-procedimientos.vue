@@ -56,7 +56,7 @@ export default {
 
   async fetch () {
     // Definition data:
-    const localCollectioName = 'juana_patologias_procedimientos'
+    // const localCollectioName = 'juana_patologias_procedimientos'
     const remoteCollection = {
       name: 'juana_patologias',
       filter: 'category ~ "procedimientos"',
@@ -66,26 +66,26 @@ export default {
     const baseUrlPath = '/api/files/'
 
     this.baseUrl = baseUrlName + baseUrlPath
-    const results = JSON.parse(window.localStorage.getItem(localCollectioName))
-    if (results) {
-      this.posts = results
-    } else {
-      // load from api
+    // const results = JSON.parse(window.localStorage.getItem(localCollectioName))
+    // if (results) {
+    //   this.posts = results
+    // } else {
+    //   // load from api
 
-      const client = new PocketBase(baseUrlName)
-      const resultList = await client.records.getList(
-        remoteCollection.name, 1, 50,
-        {
-          filter: remoteCollection.filter,
-          sort: remoteCollection.sort
-        }
-      )
+    const client = new PocketBase(baseUrlName)
+    const resultList = await client.records.getList(
+      remoteCollection.name, 1, 50,
+      {
+        filter: remoteCollection.filter,
+        sort: remoteCollection.sort
+      }
+    )
 
-      this.posts = resultList.items
+    this.posts = resultList.items
 
-      // store to local
-      window.localStorage.setItem(localCollectioName, JSON.stringify(this.posts))
-    }
+    //   // store to local
+    //   window.localStorage.setItem(localCollectioName, JSON.stringify(this.posts))
+    // }
   }
 }
 </script>

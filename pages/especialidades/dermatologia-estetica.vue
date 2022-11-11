@@ -54,14 +54,48 @@ export default {
     }
   },
 
+  // async fetch () {
+  //   const client = new PocketBase('https://base.altaxi.app')
+  //   const resultList = await client.records.getList('juana_patologias', 1, 50, {
+  //     filter: 'category ~ "estetica"',
+  //     sort: 'title'
+  //   })
+  //   this.posts = resultList.items
+  //   this.baseUrl = client.baseUrl + '/api/files/'
+  }
+
   async fetch () {
-    const client = new PocketBase('https://base.altaxi.app')
-    const resultList = await client.records.getList('juana_patologias', 1, 50, {
+    // Definition data:
+    // const localCollectioName = 'juana_patologias_estetica'
+    const remoteCollection = {
+      name: 'juana_patologias',
       filter: 'category ~ "estetica"',
       sort: 'title'
-    })
+    }
+    const baseUrlName = 'https://base.altaxi.app'
+    const baseUrlPath = '/api/files/'
+
+    this.baseUrl = baseUrlName + baseUrlPath
+    // const results = JSON.parse(window.localStorage.getItem(localCollectioName))
+    // if (results) {
+    //   this.posts = results
+    // } else {
+    //   // load from api
+
+    const client = new PocketBase(baseUrlName)
+    const resultList = await client.records.getList(
+      remoteCollection.name, 1, 50,
+      {
+        filter: remoteCollection.filter,
+        sort: remoteCollection.sort
+      }
+    )
+
     this.posts = resultList.items
-    this.baseUrl = client.baseUrl + '/api/files/'
+
+    //   // store to local
+    //   window.localStorage.setItem(localCollectioName, JSON.stringify(this.posts))
+    // }
   }
 
 }
