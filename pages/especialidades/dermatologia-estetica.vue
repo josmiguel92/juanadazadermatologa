@@ -62,7 +62,6 @@ export default {
   //   })
   //   this.posts = resultList.items
   //   this.baseUrl = client.baseUrl + '/api/files/'
-  }
 
   async fetch () {
     // Definition data:
