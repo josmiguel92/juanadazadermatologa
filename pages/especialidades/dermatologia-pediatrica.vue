@@ -4,8 +4,7 @@
 
     <div
       class="px-4 py-16 w-full md:px-24 lg:px-32 lg:py-20"
-      style="padding-top:12rem
-"
+      style="padding-top:12rem"
     >
       <div class="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
         <h2 class="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
@@ -21,16 +20,43 @@
           <span class="font-bold">te brindaremos la mejor asesoria con mucho amor!</span>
         </p>
       </div>
+      <p v-if="$fetchState.pending">
+        Loading content...
+      </p>
+      <p v-else-if="$fetchState.error">
+        An error occurred :(
+      </p>
+      <div v-else>
+        <div v-for="(category, index) in categories.items" :key="index" class="bg-white py-6 sm:py-8 lg:py-12">
+          <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+            <!-- text - start -->
+            <div class="mb-10 md:mb-16">
+              <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">
+                {{ category.title }}
+              </h2>
 
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-        <feature-card
-          v-for="(item, index) in posts"
-          :key="index"
-          :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
-          :name="item.title"
-          path="#"
-          :text="item.desc"
-        />
+              <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
+                {{ category.description }}
+              </p>
+            </div>
+            <!-- text - end -->
+
+            <div class="grid sm:grid-cols-4 gap-6">
+              <div
+                v-for="(item, cat_index) in filteredPatologies(category)"
+                :key="cat_index"
+              >
+                <feature-card
+                  v-if="item.category.includes(mainCategory)"
+                  :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
+                  :name="item.title"
+                  path="#"
+                  :text="item.desc"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -51,75 +77,30 @@ export default {
 
   data () {
     return {
-      posts: this.posts
+      categories: this.categories,
+      mainCategory: 'pediatrica'
     }
   },
-
-  // async fetch () {
-  //   // Definition data:
-  //   const localCollectioName = 'juana_patologias_pediatrica'
-  //   const remoteCollection = {
-  //     name: 'juana_patologias',
-  //     filter: 'category ~ "pediatrica"',
-  //     sort: 'title'
-  //   }
-  //   const baseUrlName = 'https://base.altaxi.app'
-  //   const baseUrlPath = '/api/files/'
-
-  //   this.baseUrl = baseUrlName + baseUrlPath
-  //   const results = JSON.parse(window.localStorage.getItem(localCollectioName))
-  //   if (results) {
-  //     this.posts = results
-  //   } else {
-  //     // load from api
-
-  //     const client = new PocketBase(baseUrlName)
-  //     const resultList = await client.records.getList(
-  //       remoteCollection.name, 1, 50,
-  //       {
-  //         filter: remoteCollection.filter,
-  //         sort: remoteCollection.sort
-  //       }
-  //     )
-
-  //     this.posts = resultList.items
-
-  //     // store to local
-  //     window.localStorage.setItem(localCollectioName, JSON.stringify(this.posts))
-  //   }
-  // }
   async fetch () {
-    // Definition data:
-    // const localCollectioName = 'juana_patologias_pediatrica'
-    const remoteCollection = {
-      name: 'juana_patologias',
-      filter: 'category ~ "pediatrica"',
-      sort: 'title'
-    }
     const baseUrlName = 'https://base.altaxi.app'
     const baseUrlPath = '/api/files/'
-
     this.baseUrl = baseUrlName + baseUrlPath
-    // const results = JSON.parse(window.localStorage.getItem(localCollectioName))
-    // if (results) {
-    //   this.posts = results
-    // } else {
-    //   // load from api
-
     const client = new PocketBase(baseUrlName)
-    const resultList = await client.records.getList(
-      remoteCollection.name, 1, 50,
-      {
-        filter: remoteCollection.filter,
-        sort: remoteCollection.sort
-      }
-    )
+    const categories = await client.records.getList('juana_patologias_categorys', 1, 50, {
+      filter: 'groups ~ "' + this.mainCategory + '"',
+      expand: 'patologies',
+      sort: 'title'
+    })
 
-    this.posts = resultList.items
-
-    //   // store to local
-    //   window.localStorage.setItem(localCollectioName, JSON.stringify(this.posts))
-    // }
+    this.categories = categories
+  },
+  methods: {
+    filteredPatologies (category) {
+      return category['@expand'].patologies.filter(this.checkMainCategory)
+    },
+    checkMainCategory (patology) {
+      return patology.category.includes(this.mainCategory)
+    }
   }
 
 }

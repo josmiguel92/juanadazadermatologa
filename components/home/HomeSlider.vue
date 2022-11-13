@@ -2,7 +2,7 @@
   <div>
     <VueSlickCarousel v-bind="settings">
       <slider-item-1 />
-      <slider-item-2 />
+      <!-- <slider-item-2 /> -->
       <!-- <slider-item-3 /> -->
     </VueSlickCarousel>
   </div>
