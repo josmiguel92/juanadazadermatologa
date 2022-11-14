@@ -89,14 +89,14 @@ export default {
     const categories = await client.records.getList('juana_patologias_categorys', 1, 50, {
       filter: 'groups ~ "' + this.mainCategory + '"',
       expand: 'patologies',
-      sort: 'title'
+      sort: 'title,-patologies.title'
     })
 
     this.categories = categories
   },
   methods: {
     filteredPatologies (category) {
-      return category['@expand'].patologies.filter(this.checkMainCategory)
+      return category['@expand'].patologies.filter(this.checkMainCategory).sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
     },
     checkMainCategory (patology) {
       return patology.category.includes(this.mainCategory)
