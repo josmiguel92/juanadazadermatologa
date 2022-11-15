@@ -1,7 +1,7 @@
 <template>
   <div
     class="px-4 py-5 w-full md:px-24 lg:px-8 z-10"
-    :class="position"
+    :class="position + ' ' + backgroud"
   >
     <div class="relative flex items-center justify-between">
       <a
@@ -122,6 +122,11 @@ export default {
     position: {
       type: String,
       default: 'relative'
+    },
+    backgroud:
+    {
+      type: String,
+      default: 'bg-transparent'
     }
   },
   data () {
@@ -132,7 +137,7 @@ export default {
         { name: 'Servicios', path: '/' },
         // { name: 'Misión y Visión', path: '/' },
         { name: 'Informes de Salud', path: '/' },
-        { name: 'Tienda dermatológica', path: '#store' },
+        { name: 'Tienda dermatológica', path: '/store' },
         { name: 'Contácto', path: '/' }
 
       ]
