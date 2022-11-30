@@ -8961,10 +8961,10 @@ pnp-webpack-plugin@^1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
-pocketbase@^0.7.4:
-  version "0.7.4"
-  resolved "https://registry.yarnpkg.com/pocketbase/-/pocketbase-0.7.4.tgz#2ca1fe03215ec278ae7239ef63befb4c002d9ad9"
-  integrity sha512-PvBRi4hbgbiBwDjhHa9lGD/ala8dSTjKeNAsHAgsXdIo4v9RgCk2s3Zqd/4UXVBgTJHVM6F7fGOZPvvJfSNVLQ==
+pocketbase@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/pocketbase/-/pocketbase-0.8.1.tgz#b50e0f12d9073dc9f857d6716fda1c2cc6288b3a"
+  integrity sha512-6ABZJ6gEvkfT46otZbyC+4JQ8kaV/I3tKP2HcqtBU4QIYKaha/THekVPq0dmpj88oGiTIGf+L1Hd5EXLL/T70w==
 
 popper.js@^1.16.1:
   version "1.16.1"
