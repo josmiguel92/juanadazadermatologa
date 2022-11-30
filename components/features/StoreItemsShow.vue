@@ -3,7 +3,9 @@
     <a id="store" />
     <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
       <div class="flex justify-between items-end gap-4 mb-10">
-        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold ">Productos dermatol&oacute;gicos recomendados</h2>
+        <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold ">
+          Productos dermatol&oacute;gicos recomendados
+        </h2>
 
         <a href="#" class="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 border text-gray-500 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 md:px-8 py-2 md:py-3">Ver todos</a>
       </div>
@@ -19,17 +21,20 @@
           <!-- product - start -->
           <div
             v-for="(item, index) in products"
-            :key="index">
+            :key="index"
+          >
             <a href="#" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
               <img
                 :src="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
                 loading="lazy"
                 :alt="item.name"
-                class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200">
+                class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200"
+              >
 
               <span
                 v-if="item.reference!=''"
-                class="bg-red-500 text-white text-sm font-semibold tracking-wider uppercase rounded-r-lg absolute left-0 top-3 px-3 py-1.5">{{ item.reference }}</span>
+                class="bg-red-500 text-white text-sm font-semibold tracking-wider uppercase rounded-r-lg absolute left-0 top-3 px-3 py-1.5"
+              >{{ item.reference }}</span>
             </a>
 
             <div class="flex justify-between items-start bg-gray-100 rounded-b-lg gap-2 p-4">

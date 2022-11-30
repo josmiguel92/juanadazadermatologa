@@ -42,7 +42,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss',
+    // '@nuxtjs/tailwindcss',
     '@nuxt/postcss8'
   ],
 
@@ -50,8 +50,20 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    'nuxt-material-design-icons'
+    'nuxt-material-design-icons',
+    '@nuxtjs/markdownit'
+    // '@nuxt/content'
   ],
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      // 'markdown-it-div',
+      // 'markdown-it-attrs'
+    ],
+    runtime: true
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {

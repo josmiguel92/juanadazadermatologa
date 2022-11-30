@@ -51,7 +51,7 @@
                   v-if="item.category.includes(mainCategory)"
                   :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
                   :name="item.title"
-                  path="#"
+                  :path="('/article/' + item.title + '/' + item.id)"
                   :text="item.desc"
                 />
               </div>

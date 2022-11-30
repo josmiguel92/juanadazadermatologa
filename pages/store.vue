@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav-bar position="" backgroud="bg-primary"/>
+    <nav-bar position="" backgroud="bg-primary" />
     <store-items-show />
   </div>
 </template>
