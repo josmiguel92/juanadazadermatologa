@@ -96,7 +96,10 @@ export default {
   },
   methods: {
     filteredPatologies (category) {
-      return category['@expand'].patologies.filter(this.checkMainCategory).sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
+      if (typeof category['@expand'].patologies !== 'undefined') {
+        return category['@expand'].patologies.filter(this.checkMainCategory).sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
+      }
+      return null
     },
     checkMainCategory (patology) {
       return patology.category.includes(this.mainCategory)
