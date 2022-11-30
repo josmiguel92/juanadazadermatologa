@@ -76,7 +76,6 @@ export default {
       res.json()
     )
 
-    console.log(record)
     return {
       baseUrl,
       record,

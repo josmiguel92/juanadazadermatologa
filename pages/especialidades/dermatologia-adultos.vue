@@ -52,7 +52,7 @@
                   v-if="item.category.includes(mainCategory)"
                   :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
                   :name="item.title"
-                  :path="('/article/' + item.title + '/' + item.id)"
+                  :path="'/articles/' + item.title + '/' + item.id"
                   :text="item.desc"
                 />
               </div>
@@ -92,7 +92,6 @@ export default {
       expand: 'patologies',
       sort: 'title'
     })
-
     this.categories = categories
   },
   methods: {
