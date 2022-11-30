@@ -50,7 +50,7 @@
               >
                 <feature-card
                   v-if="item.category.includes(mainCategory)"
-                  :image="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
+                  :image="baseUrl + item.collectionId + '/' + item.id + '/' + item.image + '?thumb=400x400'"
                   :name="item.title"
                   :path="'/articles/' + item.title + '/' + item.id"
                   :text="item.desc"
@@ -96,10 +96,7 @@ export default {
   },
   methods: {
     filteredPatologies (category) {
-      if (typeof category['@expand'].patologies !== 'undefined') {
-        return category['@expand'].patologies.filter(this.checkMainCategory).sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
-      }
-      return null
+      return category.expand.patologies.filter(this.checkMainCategory).sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
     },
     checkMainCategory (patology) {
       return patology.category.includes(this.mainCategory)
