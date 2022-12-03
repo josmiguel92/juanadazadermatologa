@@ -21,6 +21,12 @@
   bottom: 8rem !important;
 
 }
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur);
+  backdrop-filter: var(--tw-backdrop-blur);
+}
 *,
 ::before,
 ::after {
