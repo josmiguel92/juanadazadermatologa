@@ -44,7 +44,7 @@
               </div>
 
               <div class="flex flex-col items-end">
-                <span class="text-gray-600 lg:text-lg font-bold">${{ item.price }}</span>
+                <span class="text-gray-600 lg:text-lg font-bold">{{ item.price }} COP</span>
               </div>
             </div>
           </div>
