@@ -6,8 +6,8 @@
     <EspecialidadesHome />
     <HomeAbout />
     <HomeFeatures />
-    <HomeAdvice />
     <HomeTeam />
+    <HomeAdvice />
     <ContactForm />
   </div>
 </template>
