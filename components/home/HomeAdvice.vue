@@ -27,7 +27,7 @@
 
           <p class="text-gray-500 sm:text-lg mb-6 md:mb-8">
             Es importante explorar tu piel en busca de lunares y lesiones.
-            En caso de los lunares aplicar el abcde, que permita en forma sencilla
+            En caso de los lunares aplicar el abcde, que permita entender de forma sencilla
             las caracteristicas que hay que tener en cuenta para saber si
             consultar a nuestro dermatologo.
           </p>
