@@ -23,7 +23,7 @@
     "nuxt": "^2.15.8",
     "nuxt-material-design-icons": "^1.0.4",
     "tailwindcss": "^3.0.10",
-    "pocketbase": "^0.7.4",
+    "pocketbase": "^0.8.2",
     "tailwindcss-animatecss": "^3.0.0",
     "tw-elements": "^1.0.0-alpha12",
     "vue": "^2.6.14",
