@@ -2,6 +2,7 @@
   <div
     class="px-4 py-5 w-full md:px-24 lg:px-8 z-10"
     :class="position + ' ' + backgroud"
+    :style="inlineStyle"
   >
     <div class="relative flex items-center justify-between">
       <a
@@ -127,6 +128,11 @@ export default {
     {
       type: String,
       default: 'bg-transparent'
+    },
+    inlineStyle:
+    {
+      type: String,
+      default: 'background-image: url(/img/disease-page-background.png);'
     }
   },
   data () {
