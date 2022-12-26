@@ -2,6 +2,7 @@
   <div>
     <nav-bar position="" backgroud="bg-primary" />
     <store-items-show />
+    <SiteFooter />
   </div>
 </template>
 

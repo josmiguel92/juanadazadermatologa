@@ -1,17 +1,24 @@
 <template>
   <div>
     <nav-bar position="absolute" />
-    <header-block />
-    <features-block1 />
+    <div class="p-8"></div>
+    <home-about></home-about>
+    <home-features></home-features>
+    <home-team></home-team>
+    <site-footer></site-footer>
   </div>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
-import HeaderBlock from '~/components/HeaderBlock.vue'
-import FeaturesBlock1 from '~/components/features/FeaturesBlock1.vue'
+import HomeAbout from '~/components/home/HomeAbout.vue'
+import HomeTeam from '~/components/home/HomeTeam.vue'
+import HomeFeatures from '~/components/home/HomeFeatures.vue'
+import SiteFooter from '~/components/SiteFooter.vue'
+
 export default {
   name: 'IndexPage',
-  components: { NavBar, HeaderBlock, FeaturesBlock1 }
+  components: { NavBar, HomeAbout, HomeTeam, HomeFeatures, SiteFooter }
 }
+
 </script>
