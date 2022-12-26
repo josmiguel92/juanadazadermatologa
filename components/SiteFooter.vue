@@ -73,7 +73,7 @@
       </div>
 
       <div class="text-gray-400 text-sm text-center py-8">
-        © 2021 - Present Flowrift. All rights reserved.
+        © 2022 - Juana T. Daza Vergara. All rights reserved.
       </div>
     </footer>
   </div>
