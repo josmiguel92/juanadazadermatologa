@@ -21,10 +21,11 @@
               <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
                 <img class="flex-shrink-0 rounded-full w-64 h-64 object-cover object-center sm:mb-0 mb-4" loading="lazy" :src="person.image" :alt="person.name">
                 <div class="flex-grow sm:pl-8">
-                  <h2 class="title-font font-medium text-lg text-gray-900">
+                  <h2 class="title-font font-medium text-2xl text-gray-900 flex justify-between">
                     {{ person.name }}
+                  <small class="text-sm">⭐⭐⭐⭐⭐</small>
                   </h2>
-                  <div class="m-4">
+                  <div class="m-4 ml-0">
                     <img class="w-[3rem] h-[2rem] sm:mb-0 inline" loading="lazy" :src="person.flag" :alt="person.nationality">
                     <h3 class="text-gray-500 inline pl-2">
                       {{ person.nationality }}
@@ -33,7 +34,7 @@
                   <p class="mb-4">
                     {{ person.bio }}
                   </p>
-                  <p class="text-gray-900 font-medium title-font tracking-wider text-sm">
+                  <p class="text-gray-900 font-medium title-font tracking-wider text-lg">
                     {{ person.quote }}
                   </p>
                   <span class="inline-flex">

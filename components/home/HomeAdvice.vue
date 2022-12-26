@@ -42,7 +42,7 @@
             <span class="text-accent font-bold">
               Consejo:
             </span>
-            asistir a tu dermatologo para deteccion temprana
+            asistir a tu dermatologo para detección temprana
             cada 2 años a partir de los 25 años
             <br><br>
           </p>
