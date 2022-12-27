@@ -34,7 +34,7 @@
             :key="index"
             :image="baseUrl + item.collectionId + '/' + item.id + '/' + item.image + '?thumb=400x400'"
             :name="item.title"
-            :path="'/articles/' + item.title + '/' + item.id"
+            :path="'/articles/' + item.title.trim().replace(/^\s+|\s+$/gm,'-') + '/' + item.id"
             :text="item.desc"
           />
         </div>

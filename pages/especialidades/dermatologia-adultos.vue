@@ -60,7 +60,7 @@
                     v-if="item.category.includes(mainCategory)"
                     :image="baseUrl + item.collectionId + '/' + item.id + '/' + item.image + '?thumb=400x400'"
                     :name="item.title"
-                    :path="'/articles/' + item.title + '/' + item.id"
+                    :path="'/articles/' + item.title.trim().replace(/^\s+|\s+$/gm,'-') + '/' + item.id"
                     :text="item.desc"
                   />
                 </div>
@@ -104,7 +104,6 @@ export default {
   },
   methods: {
     filteredPatologies (category) {
-      console.log('hello!!')
       return category.expand.patologies.filter(this.checkMainCategory).sort((a, b) => a.title.toLowerCase().localeCompare(b.title.toLowerCase()))
     },
     checkMainCategory (patology) {
