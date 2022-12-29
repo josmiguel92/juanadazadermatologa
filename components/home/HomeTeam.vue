@@ -15,7 +15,7 @@
 
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-wrap -m-4">
+          <div class="flex flex-wrap -m-4 justify-center">
             <!-- person - start -->
             <div v-for="(person, index) in team" :key="index" class="p-4 lg:w-4/5 mb-10">
               <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
