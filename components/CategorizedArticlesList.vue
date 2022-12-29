@@ -25,14 +25,14 @@
       An error occurred :(
     </p>
     <div v-else class="flex">
-      <div class="w-1/6">
+      <div class="hidden md:visible w-1/6">
         <nav class="flex flex-col h-40 index">
           <a v-for="(category, index) in categories.items" :key="index" class="text-gray-800 text-lg font-bold my-5 pr-2 cursor-pointer uppercase" @click="scrollToAnchorPoint(category.id)">
             {{ category.title }}
           </a>
         </nav>
       </div>
-      <div class="w-5/6">
+      <div class="w-full md:w-5/6">
         <div v-for="(category, index) in categories.items" :key="index" class="bg-white py-6 sm:py-8 lg:py-12">
           <div :id="category.id" :ref="category.id" class="max-w-screen-2xl px-4 md:px-8 mx-auto">
             <!-- text - start -->
@@ -47,7 +47,7 @@
             </div>
             <!-- text - end -->
 
-            <div class="grid sm:grid-cols-3 gap-6">
+            <div class="grid sm:grid-cols-4 md:grid-cols-3 gap-6">
               <div
                 v-for="(item, cat_index) in filteredPatologies(category)"
                 :key="cat_index"
