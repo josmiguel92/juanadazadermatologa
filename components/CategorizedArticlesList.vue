@@ -25,8 +25,8 @@
       An error occurred :(
     </p>
     <div v-else class="flex">
-      <div class="hidden md:flex w-1/6">
-        <nav class="flex flex-col h-40 index">
+      <div class="hidden md:flex w-1/6 mt-52">
+        <nav class="flex flex-col h-40 index w-full">
           <a v-for="(category, index) in categories.items" :key="index" class="text-gray-800 text-lg font-bold my-5 pr-2 cursor-pointer uppercase" @click="scrollToAnchorPoint(category.id)">
             {{ cleanTitle(category.title) }}
           </a>
@@ -88,7 +88,6 @@ export default {
     }
   },
   async fetch () {
-    console.log('test')
     const baseUrlName = 'https://base.altaxi.app'
     const baseUrlPath = '/api/files/'
     this.baseUrl = baseUrlName + baseUrlPath
