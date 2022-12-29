@@ -29,8 +29,8 @@
           v-for="(item, index) in posts"
           :key="index"
           :image="baseUrl + item.collectionId + '/' + item.id + '/' + item.image + '?thumb=400x400'"
-          :name="item.title"
-          :path="'/articles/' + item.title.trim().replace(/ /g,'-') + '/' + item.id"
+          :name="cleanTitle(item.title)"
+          :path="'/articles/' + slugify(cleanTitle(item.title)) + '/' + item.id"
           :text="item.desc"
         />
       </div>
@@ -74,7 +74,16 @@ export default {
       }
     )
     this.posts = resultList.items
+  },
+  methods: {
+    cleanTitle (title) {
+      title = title.trim()
+      if (title.substring(title.length - 1, title.length) === '.') { title = title.substring(0, title.length - 1) }
+      return title
+    },
+    slugify (title) {
+      return title.replace(/ /g, '-')
+    }
   }
-
 }
 </script>

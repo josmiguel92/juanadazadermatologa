@@ -6,7 +6,7 @@
     <div class="flex flex-col mb-6 lg:justify-between lg:flex-row md:mb-8">
       <h2 class="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none md:mb-6 group">
         <span class="inline-block mb-1 sm:mb-4">
-         {{ categoryTitle }}
+          {{ categoryTitle }}
 
         </span>
         <div class="h-1 ml-auto duration-300 origin-left transform bg-deep-purple-accent-400 scale-x-30 group-hover:scale-x-100" />
@@ -38,7 +38,7 @@
             <!-- text - start -->
             <div class="mb-10 md:mb-16">
               <h2 class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-6">
-                {{ category.title }}
+                {{ cleanTitle(category.title) }}
               </h2>
 
               <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">
@@ -55,8 +55,8 @@
                 <feature-card
                   v-if="item.category.includes(mainCategory)"
                   :image="baseUrl + item.collectionId + '/' + item.id + '/' + item.image + '?thumb=400x400'"
-                  :name="item.title"
-                  :path="'/articles/' + item.title.trim().replace(/ /g,'-') + '/' + item.id"
+                  :name="cleanTitle(item.title)"
+                  :path="'/articles/' + slugify(cleanTitle(item.title)) + '/' + item.id"
                   :text="item.desc"
                 />
               </div>
@@ -110,9 +110,16 @@ export default {
     scrollToAnchorPoint (refName) {
       const el = this.$refs[refName][0]
       el.scrollIntoView({ behavior: 'smooth' })
+    },
+    cleanTitle (title) {
+      title = title.trim()
+      if (title.substring(title.length - 1, title.length) === '.') { title = title.substring(0, title.length - 1) }
+      return title
+    },
+    slugify (title) {
+      return title.replace(/ /g, '-')
     }
   }
-
 }
 </script>
 
