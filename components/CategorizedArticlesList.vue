@@ -28,7 +28,7 @@
       <div class="hidden md:visible w-1/6">
         <nav class="flex flex-col h-40 index">
           <a v-for="(category, index) in categories.items" :key="index" class="text-gray-800 text-lg font-bold my-5 pr-2 cursor-pointer uppercase" @click="scrollToAnchorPoint(category.id)">
-            {{ category.title }}
+            {{ cleanTitle(category.title) }}
           </a>
         </nav>
       </div>
