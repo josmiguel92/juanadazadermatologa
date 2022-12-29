@@ -5,7 +5,7 @@
 
       <div class="w-full flex flex-col bg-white/50 backdrop-blur-sm text-center rounded-lg relative p-4">
         <span class="text-gray-600  font-bold">{{ name }}</span>
-        <span class="text-gray-800 text-sm">{{ text }}</span>
+        <!-- <span class="text-gray-800 text-sm">{{ text }}</span> -->
       </div>
     </a>
   </div>
