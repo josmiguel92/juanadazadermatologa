@@ -9,9 +9,10 @@
 
     <div class="container px-12 py-36 mx-auto flex h-screen relative animate__fadeInUp animate__animated">
       <div class="lg:w-2/3 flex flex-col items-start justify-end  mx-auto">
-        <h1 class="sm:pr-16 text-2xl font-medium title-font text-white">
-          <!-- <span class="font-extrabold">“Dra Juana T. Daza Vergara</span><br> -->
-          Esperamos contribuir con la mejor experiencia y entendimiento de enfermedades, procedimientos y cuidados de la piel
+        <h1 class="sm:pr-16 text-3xl font-medium title-font text-white">
+          <span class="font-extrabold  text-5xl">¡Esperamos contribuir con </span><br>
+          la mejor experiencia y entendimiento de enfermedades, <br>
+          procedimientos y cuidados de la piel!
         </h1>
       </div>
     </div>
