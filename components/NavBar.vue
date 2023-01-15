@@ -99,7 +99,7 @@
                     :href="item.path"
                     :aria-label="item.name"
                     :title="item.name"
-                    class="font-medium tracking-wide text-white transition-colors duration-200 hover:text-primary"
+                    class="font-medium tracking-wide text-secondary transition-colors duration-200 hover:text-primary"
                   >{{ item.name }}</a>
                 </li>
 

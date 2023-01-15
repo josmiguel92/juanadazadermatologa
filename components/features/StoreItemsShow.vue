@@ -25,7 +25,7 @@
           >
             <a href="#" class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative">
               <img
-                :src="baseUrl + item['@collectionId'] + '/' + item.id + '/' + item.image + '?thumb=400x400'"
+                :src="baseUrl + item.collectionId + '/' + item.id + '/' + item.image + '?thumb=400x400'"
                 loading="lazy"
                 :alt="item.name"
                 class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200"

@@ -23,7 +23,7 @@
                 <div class="flex-grow sm:pl-8">
                   <h2 class="title-font font-medium text-2xl text-gray-900 flex justify-between">
                     {{ person.name }}
-                  <small class="text-sm">⭐⭐⭐⭐⭐</small>
+                  <small class="text-sm text-yellow-600">⭐⭐⭐⭐⭐</small>
                   </h2>
                   <div class="m-4 ml-0">
                     <img class="w-[3rem] h-[2rem] sm:mb-0 inline" loading="lazy" :src="person.flag" :alt="person.nationality">
