@@ -1,7 +1,10 @@
 <template>
   <section class="text-gray-600 body-font h-screen w-screen bg-accent relative">
     <div class="absolute w-full h-screen">
-      <img src="/img/jtd.jpg" class=" w-full h-full object-cover object-center brightness-75">
+      <video class=" w-full h-full object-cover object-center brightness-75" autoplay loop muted>
+        <source src="/video/loop-video.mp4" type="video/mp4">
+        <img src="/img/jtd.jpg" class=" w-full h-full object-cover object-center brightness-75">
+      </video>
     </div>
 
     <div class="container px-12 py-36 mx-auto flex h-screen relative animate__fadeInUp animate__animated">
