@@ -2,7 +2,9 @@
   <section class="text-gray-600 body-font h-screen w-screen bg-accent relative">
     <div class="absolute w-full h-screen">
       <video class=" w-full h-full object-cover object-center brightness-75" autoplay loop muted>
-        <source src="/video/loop-video.mp4" type="video/mp4">
+        <source src="/video/output_h265.mp4" type="video/mp4; codecs=hevc">
+        <source src="/video/output.webm" type="video/webm; codecs=vp9">
+
         <img src="/img/jtd.jpg" class=" w-full h-full object-cover object-center brightness-75">
       </video>
     </div>
