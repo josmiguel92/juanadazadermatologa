@@ -4,7 +4,7 @@
       <img src="/icons/medic-w.png" class="w-32">
     </div>
     <p class="font-bold tracking-wide text-white mb-6 uppercase">
-      Consejo del dia
+      Sabias Que
     </p>
     <p class="text-white">
       {{ randomFact() }}
