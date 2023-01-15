@@ -1,11 +1,11 @@
 <template>
   <div>
     <nav-bar position="absolute" />
-    <div class="p-8"></div>
-    <home-about></home-about>
-    <home-features></home-features>
-    <home-team></home-team>
-    <site-footer></site-footer>
+    <div class="p-8" />
+    <home-about />
+    <home-features />
+    <home-team />
+    <site-footer />
   </div>
 </template>
 

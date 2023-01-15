@@ -142,9 +142,9 @@ export default {
         { name: 'Quiénes somos', path: '/about' },
         { name: 'Servicios', path: '/' },
         // { name: 'Misión y Visión', path: '/' },
-        { name: 'Informes de Salud', path: '/' },
+        { name: 'Informes de Salud', path: '/#healt_informs' },
         { name: 'Tienda dermatológica', path: '/store' },
-        { name: 'Contácto', path: '/' }
+        { name: 'Contácto', path: '/#contact' }
 
       ]
     }

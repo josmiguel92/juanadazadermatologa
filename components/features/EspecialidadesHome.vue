@@ -6,6 +6,8 @@ background-color: #7dcdc5;
 background-image: linear-gradient(62deg, #7dcdc5 0%, #E0C3FC 100%);
 "
   >
+    <a id="healt_informs" />
+
     <div class="flex flex-col mb-6 lg:justify-between md:mb-8">
       <h2 class="max-w-lg mb-5 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none md:mb-6 group">
         <span class="inline-block mb-1 sm:mb-4">
