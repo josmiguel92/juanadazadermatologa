@@ -22,7 +22,7 @@ export default {
         'Al usar el protector solar es importante cubrir abundantemente toda la superficie expuesta al sol (cantidad generosa)',
         'Hidrata diariamente toda tu piel y no olvides tomar abundante agua!',
         'Cuando tu cuerpo no puede mas tu piel habla. aprende a entenderla',
-        'Si sufres de dermatitis atópica Pueden bañarse, pero sólo con agua tibia y sustitutos de jabón, los baños deben ser cortos máximo 10 minutos',
+        'Si sufres de dermatitis atópica pueden bañarse, pero sólo con agua tibia y sustitutos de jabón, los baños deben ser cortos máximo 10 minutos',
         'Usa tejidos mas poroso como los del algodón, jeans o poliester que ofrecen mejor protección contra los rayos del sol',
         'Es muy importante el apoyo psicológico y terapia antiestrés en algunas enfermedades dermatológicas, ya que evitaría el empeoramiento de estas'
       ]

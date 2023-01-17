@@ -18,7 +18,7 @@ export default {
     return {
       fact: [
         '¿Bañarte muchas veces al dia puede dañar tu piel? Si! Esto se debe a que eliminamos de nuestra piel el manto acido que nos ayuda a evitar infecciones.',
-        '¿Sabias que el 80% del envejecimiento de nuestra piel se debe a las radiaciones ultravioleta?',
+        '¿Sabias que el 80% del envejecimiento de nuestra piel se debe a las radiaciones ultravioletas?',
         '¿Sabias que cada 9 minutos alguien muere por cáncer de piel en el mundo?',
         '¿Sabias que 33.000 muertes en el mundo por cáncer de piel podrían haberse prevenido si los pacientes hubieran buscado ayuda medica?',
         '¿Sabias que 1/3 de los pacientes con cáncer, tienen cáncer de piel?',

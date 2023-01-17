@@ -91,16 +91,16 @@ export default {
           image: '/img/team/susu.jpg',
           bio: 'Hola, me llamo Souhair Aoun Ortiz, Soy Dominico-Libanesa, Dermatóloga Clínico Quirúrgico y Estético de profesión y vocación, Soy egresada de la Universidad de Ciencias Médicas de la Habana, realicé mis estudios de Grado en la Universidad Tecnológica de Santiago, en República Dominicana, actualmente Me encuentro laborando en Centro Médico Dr. Bournigal e Instituto Dermatológico y Cirugía de piel, Unidad Norte, Puerto Plata.',
           quote: 'Haz que tu piel sea el reflejo de tu alma',
-          instagram: 'dra.souhairaoun ',
+          instagram: 'dra.souhairaoun',
           flag: '/img/dominicana.jpg',
           nationality: 'Dominico-Libanesa'
         },
         {
           name: 'Dra. Gina G. Valladares Quiñonez',
           image: '/img/team/gina.jpg',
-          bio: 'Médico egresada de la Universidad Católica de Honduras, Reciente de tercer año del servicio de Dermatología clínica en el hospital clínico quirúrgico Miguel Enríquez de la Habana. Cuba. Redactor de contenidos de salud y cuidado de la piel. ',
+          bio: 'Médico egresada de la Universidad Católica de Honduras, Residente de tercer año del servicio de Dermatología clínica en el hospital clínico quirúrgico Miguel Enríquez de la Habana. Cuba. Redactor de contenidos de salud y cuidado de la piel. ',
           quote: 'La piel es tu mejor carta de presentación',
-          instagram: 'dra.souhairaoun ',
+          instagram: 'longissimuslife',
           flag: '/img/honduras.jpg',
           nationality: 'Hondureña'
         }
