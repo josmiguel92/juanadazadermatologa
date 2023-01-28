@@ -41,7 +41,9 @@
               <div class="flex flex-col">
                 <a href="#" class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">{{ item.name }}</a>
                 <span class="text-gray-500 text-sm lg:text-base">{{ item.description }}</span>
-                <a v-if="item.link != ''" :href="item.link" class="text-gray-800 hover:text-gray-500 text-sm font-bold transition duration-100">Ordenar</a>
+                <a v-if="item.link != ''" :href="item.link" target="_blank" class="inline-block flex-1 sm:flex-none bg-primary hover:bg-secondary active:bg-primary focus-visible:ring ring-primary text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3">
+                  Ordenar
+                </a>
               </div>
 
               <div class="flex flex-col items-end">
