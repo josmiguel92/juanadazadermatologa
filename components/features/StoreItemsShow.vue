@@ -33,7 +33,7 @@
 
               <span
                 v-if="item.reference!=''"
-                class="bg-red-500 text-white text-sm font-semibold tracking-wider uppercase rounded-r-lg absolute left-0 top-3 px-3 py-1.5"
+                class="bg-accent text-white text-sm font-semibold tracking-wider uppercase rounded-r-lg absolute left-0 top-3 px-3 py-1.5"
               >{{ item.reference }}</span>
             </a>
 
@@ -41,10 +41,11 @@
               <div class="flex flex-col">
                 <a href="#" class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100">{{ item.name }}</a>
                 <span class="text-gray-500 text-sm lg:text-base">{{ item.description }}</span>
+                <a v-if="item.link != ''" :href="item.link" class="text-gray-800 hover:text-gray-500 text-sm font-bold transition duration-100">Ordenar</a>
               </div>
 
               <div class="flex flex-col items-end">
-                <span class="text-gray-600 lg:text-lg font-bold">{{ item.price }} COP</span>
+                <span class="text-gray-600 text-sm font-bold">{{ item.price }} COP</span>
               </div>
             </div>
           </div>
