@@ -24,7 +24,7 @@
             :key="index"
           >
             <a
-              :href="'/products/' + slugify(cleanTitle(item.name)) + '/' + item.id"
+              :href="'/store/' + slugify(cleanTitle(item.name)) + '/' + item.id"
               class="group h-96 block bg-gray-100 rounded-t-lg overflow-hidden relative"
             >
               <img
@@ -44,7 +44,7 @@
               <div class="flex flex-col w-full">
                 <div class="flex justify-between items-start bg-gray-100 rounded-b-lg gap-2 p-4">
                   <a
-                    :href="'/products/' + slugify(cleanTitle(item.name)) + '/' + item.id"
+                    :href="'/store/' + slugify(cleanTitle(item.name)) + '/' + item.id"
                     class="text-gray-800 hover:text-gray-500 lg:text-lg font-bold transition duration-100"
                   >{{ item.name }}</a>
                   <span class="text-gray-600 text-sm font-bold">{{ formatMoney(item.price) }}</span>
@@ -52,7 +52,7 @@
                 <span class="text-gray-500 text-sm lg:text-base line-clamp-3 min-h-[2rem] max-h-24">{{ item.description }}</span>
                 <div class="flex gap-2">
                   <a
-                    :href="'/products/' + slugify(cleanTitle(item.name)) + '/' + item.id"
+                    :href="'/store/' + slugify(cleanTitle(item.name)) + '/' + item.id"
                     class="grow inline-block flex-1 bg-primary hover:bg-secondary active:bg-primary focus-visible:ring ring-primary text-white my-3 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
                   >
                     Detalles
