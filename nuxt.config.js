@@ -51,7 +51,8 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     'nuxt-material-design-icons',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/sitemap'
     // '@nuxt/content'
   ],
   markdownit: {
@@ -69,6 +70,24 @@ export default {
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/'
+  },
+  sitemap: {
+    hostname: 'https://juanadazavdermatologa.clinic',
+    gzip: true,
+    // exclude: [
+    //   '/secret',
+    //   '/admin/**'
+    // ],
+    // routes: [
+    //   '/page/1',
+    //   '/page/2',
+    //   {
+    //     url: '/page/3',
+    //     changefreq: 'daily',
+    //     priority: 1,
+    //     lastmod: '2017-06-30T13:30:00.000Z'
+    //   }
+    // ]
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
