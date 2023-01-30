@@ -10,7 +10,7 @@
 import NavBar from '~/components/NavBar.vue'
 import StoreItemsShow from '~/components/store/StoreItemsShow.vue'
 export default {
-  name: 'IndexStorePage',
+  name: 'IndexPage',
   components: { NavBar, StoreItemsShow }
 }
 </script>
