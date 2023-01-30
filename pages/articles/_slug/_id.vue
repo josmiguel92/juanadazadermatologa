@@ -19,7 +19,7 @@
           </div>
 
           <div class="bg-gray-100 overflow-hidden rounded-lg shadow-lg relative mb-6 md:mb-8">
-            <img :src="imagePath + record.image" loading="lazy" alt="Photo by Minh Pham" class="w-full h-full object-cover object-center max-h-[25rem]">
+            <img :src="imagePath + record.image" loading="lazy" :alt="record.title + ': ' + record.desc" class="w-full h-full object-cover object-center max-h-[25rem]">
           </div>
 
           <article class="prose lg:prose-xl prose-stone max-w-5xl" v-html="$md.render(record.article)" />
@@ -54,6 +54,7 @@
         </div>
       </div>
     </div>
+    <SiteFooter />
   </div>
 </template>
 

@@ -47,6 +47,7 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),
     require('tailwindcss-animatecss'),
-    require('tw-elements/dist/plugin')
+    require('tw-elements/dist/plugin'),
+    require('@tailwindcss/line-clamp')
   ]
 }

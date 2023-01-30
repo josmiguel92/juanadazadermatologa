@@ -8,7 +8,7 @@
 
 <script>
 import NavBar from '~/components/NavBar.vue'
-import StoreItemsShow from '~/components/features/StoreItemsShow.vue'
+import StoreItemsShow from '~/components/store/StoreItemsShow.vue'
 export default {
   name: 'IndexPage',
   components: { NavBar, StoreItemsShow }
