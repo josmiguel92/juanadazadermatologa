@@ -140,7 +140,7 @@ export default {
       isMenuOpen: false,
       menuItems: [
         { name: 'Quiénes somos', path: '/about' },
-        { name: 'Servicios', path: '/' },
+        { name: 'Servicios', path: '/#services' },
         // { name: 'Misión y Visión', path: '/' },
         { name: 'Informes de Salud', path: '/#healt_informs' },
         { name: 'Tienda dermatológica', path: '/store' },

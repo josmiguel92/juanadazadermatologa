@@ -26,8 +26,8 @@
           ¡Lo hacemos con amor!
         </p>
         <div class="flex gap-6 m-8">
-          <t-button>Reservar una cita </t-button>
-          <t-button class="bg-secondary">
+          <t-button>Reservar una cita</t-button>
+          <t-button class="bg-secondary" path="/onlinecite">
             Registrarse
           </t-button>
         </div>
