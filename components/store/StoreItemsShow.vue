@@ -117,7 +117,7 @@ export default {
       return title
     },
     slugify (title) {
-      return title.replace(/ /g, '-')
+      return title.replace(/[\W_]+/g, '-')
     }
   }
 
