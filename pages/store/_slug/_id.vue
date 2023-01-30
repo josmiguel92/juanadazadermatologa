@@ -6,19 +6,18 @@
       class="px-4 py-16 w-full md:px-24 lg:px-32 lg:py-20"
       style="padding-top:4rem"
     >
-
       <div class="bg-white py-6 sm:py-8 lg:py-12">
         <div class="max-w-screen-lg px-4 md:px-8 mx-auto">
           <div class="grid md:grid-cols-2 gap-8">
             <!-- images - start -->
             <div class="space-y-4">
               <div class="bg-gray-100 rounded-lg overflow-hidden relative">
-                <img :src="imagePath + record.image" loading="lazy" :alt="record.title" class="w-full h-full object-cover object-center" />
+                <img :src="imagePath + record.image" loading="lazy" :alt="record.title" class="w-full h-full object-cover object-center">
 
                 <span
-                v-if="record.reference!=''"
-                class="bg-accent text-white text-sm font-semibold tracking-wider uppercase rounded-r-lg absolute left-0 top-3 px-3 py-1.5"
-              >{{ record.reference }}</span>
+                  v-if="record.reference!=''"
+                  class="bg-accent text-white text-sm font-semibold tracking-wider uppercase rounded-r-lg absolute left-0 top-3 px-3 py-1.5"
+                >{{ record.reference }}</span>
               </div>
             </div>
             <!-- images - end -->
@@ -114,7 +113,9 @@
 
               <!-- description - start -->
               <div class="mt-10 md:mt-16 lg:mt-20">
-                <div class="text-gray-800 text-lg font-semibold mb-3">Descripción</div>
+                <div class="text-gray-800 text-lg font-semibold mb-3">
+                  Descripción
+                </div>
 
                 <p class="text-gray-500">
                   {{ record.description }}
