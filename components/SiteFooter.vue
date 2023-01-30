@@ -50,7 +50,7 @@ export default {
         { name: 'Servicios', path: '/' },
         // { name: 'Misión y Visión', path: '/' },
         { name: 'Informes de Salud', path: '/' },
-        { name: 'Tienda dermatológica', path: '/tienda' },
+        { name: 'Tienda dermatológica', path: '/store' },
         { name: 'Contácto', path: '/' }
 
       ]
