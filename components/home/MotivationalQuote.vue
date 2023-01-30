@@ -1,15 +1,15 @@
 <template>
   <div class="inline-block px-14 py-16 text-center bg-accent animate__fadeInUp animate__animated delay-300 animate__delay-3s">
-          <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
-            <img src="/icons/girl-w.png" class="w-32">
-          </div>
-          <p class="font-bold tracking-wide text-white mb-6 uppercase">
-            frases motivacionales
-          </p>
-          <p class="text-white">
-            {{ randomFact() }}
-          </p>
-        </div>
+    <div class="flex items-center justify-center w-16 h-16 mx-auto mb-6 ">
+      <img src="/icons/girl-w.png" class="w-32">
+    </div>
+    <p class="font-bold tracking-wide text-white mb-6 uppercase">
+      frases motivacionales
+    </p>
+    <p class="text-white">
+      {{ randomFact() }}
+    </p>
+  </div>
 </template>
 <script>
 export default {

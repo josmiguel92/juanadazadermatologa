@@ -40,13 +40,13 @@
 
               <div class="grid grid-cols-2 grid-cols-3 gap-4 md:gap-6 xl:gap-8 mb-4 md:mb-8">
                 <!-- image - start -->
-                <a v-for="(image, index) in record.galery" :key="index" href="#" class="group h-48 md:h-80 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
+                <div v-for="(image, index) in record.galery" :key="index" class="group h-48 md:h-80 flex items-end bg-gray-100 overflow-hidden rounded-lg shadow-lg relative">
                   <img :src="imagePath + image + '?thumb=400x400'" loading="lazy" alt="" class="w-full h-full object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200">
 
                   <!-- <div class="bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 absolute inset-0 pointer-events-none" />
 
                   <span class="inline-block text-white text-sm md:text-lg relative ml-4 md:ml-5 mb-3">VR</span> -->
-                </a>
+                </div>
                 <!-- image - end -->
               </div>
             </div>

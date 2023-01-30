@@ -39,9 +39,9 @@
         <p class="mb-3 text-sm text-gray-900">
           {{ item.text }}
         </p>
-        <a :href="item.path" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
+        <NuxtLink :to="item.path" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">
           Leer más
-        </a>
+        </NuxtLink>
       </div>
     </div>
   </div>

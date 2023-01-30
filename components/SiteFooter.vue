@@ -4,14 +4,14 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-4 py-6">
         <!-- nav - start -->
         <nav class="flex flex-wrap justify-center md:justify-start gap-x-4 gap-y-2 md:gap-6">
-          <a
+          <NuxtLink
             v-for="(item, index) in menuItems"
             :key="index"
-            :href="item.path"
+            :to="item.path"
             :aria-label="item.name"
             :title="item.name"
             class="text-white hover:text-primary active:text-primary transition duration-100"
-          >{{ item.name }}</a>
+          >{{ item.name }}</NuxtLink>
         </nav>
         <!-- nav - end -->
 
@@ -51,6 +51,7 @@ export default {
         // { name: 'Misión y Visión', path: '/' },
         { name: 'Informes de Salud', path: '/' },
         { name: 'Tienda dermatológica', path: '/store' },
+        { name: 'Teleconsulta', path: '/teleconsulta' },
         { name: 'Contácto', path: '/' }
 
       ]
