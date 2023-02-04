@@ -51,8 +51,8 @@ export default {
         // { name: 'Misión y Visión', path: '/' },
         { name: 'Informes de Salud', path: '/' },
         { name: 'Tienda dermatológica', path: '/store' },
-        { name: 'Teleconsulta', path: '/teleconsulta' },
-        { name: 'Contácto', path: '/' }
+        { name: 'Teleconsulta', path: '/teleconsulta' }
+        // { name: 'Contácto', path: '/' }
 
       ]
     }
