@@ -22,6 +22,15 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/logo.png' }
+    ],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-HM6RK8F3X8',
+        async: true
+      },
+      {
+        src: 'js/ga.js'
+      }
     ]
   },
 
@@ -73,7 +82,7 @@ export default {
   },
   sitemap: {
     hostname: 'https://juanadazavdermatologa.clinic',
-    gzip: true,
+    gzip: true
     // exclude: [
     //   '/secret',
     //   '/admin/**'
