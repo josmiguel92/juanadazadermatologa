@@ -17,8 +17,11 @@ import HomeFeatures from '~/components/home/HomeFeatures.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 export default {
-  name: 'IndexPage',
-  components: { NavBar, HomeAbout, HomeTeam, HomeFeatures, SiteFooter }
+  name: 'AboutPage',
+  components: { NavBar, HomeAbout, HomeTeam, HomeFeatures, SiteFooter },
+  head () {
+    return { title: 'Sobre nosotros | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  }
 }
 
 </script>

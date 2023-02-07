@@ -8,6 +8,9 @@
 <script>
 export default {
   name: 'DermatologiaPediatrica',
-  components: { }
+  components: { },
+  head () {
+    return { title: 'Dermatología Pediatrica | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  }
 }
 </script>

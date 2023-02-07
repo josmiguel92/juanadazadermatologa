@@ -8,6 +8,9 @@
 <script>
 export default {
   name: 'DermatologiaAdultos',
-  components: { }
+  components: { },
+  head () {
+    return { title: 'Dermatologia Clínica para Adultos | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  }
 }
 </script>

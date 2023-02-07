@@ -89,6 +89,9 @@ export default {
       slug: this.slug
       // mainCategory: 'adultos'
     }
+  },
+  head () {
+    return { title: this.record.title + ' | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
   }
 
 }

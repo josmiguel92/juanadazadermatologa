@@ -168,6 +168,9 @@ export default {
       // mainCategory: 'adultos'
     }
   },
+  head () {
+    return { title: this.record.name + ' | Tienda Dermatológica | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  },
   methods: {
     formatMoney (price) {
       // Create our number formatter.

@@ -10,7 +10,10 @@
 import NavBar from '~/components/NavBar.vue'
 import StoreItemsShow from '~/components/store/StoreItemsShow.vue'
 export default {
-  name: 'IndexPage',
-  components: { NavBar, StoreItemsShow }
+  name: 'StorePage',
+  components: { NavBar, StoreItemsShow },
+  head () {
+    return { title: 'Tienda dermatológica | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  }
 }
 </script>

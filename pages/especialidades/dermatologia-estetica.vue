@@ -9,6 +9,9 @@
 <script>
 export default {
   name: 'DermatologiaProcedimientos',
-  components: { }
+  components: { },
+  head () {
+    return { title: 'Dermatología Estética | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  }
 }
 </script>

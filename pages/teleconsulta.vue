@@ -205,8 +205,11 @@ import NavBar from '~/components/NavBar.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
 export default {
-  name: 'IndexPage',
-  components: { NavBar, SiteFooter }
+  name: 'TeleconsultaPage',
+  components: { NavBar, SiteFooter },
+  head () {
+    return { title: 'Teleconsulta de Dermatología | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  }
 }
 
 </script>

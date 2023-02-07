@@ -7,10 +7,12 @@
 </template>
 
 <script>
-import SiteFooter from '~/components/SiteFooter.vue'
 
 export default {
   name: 'DermatologiaProcedimientos',
-  components: { SiteFooter }
+  components: { },
+  head () {
+    return { title: 'Toma de biopsias y procedimientos menores | Juana Daza Vergara ~ Dermatóloga Clinico-quirúrgica y estética' }
+  }
 }
 </script>
