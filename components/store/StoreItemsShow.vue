@@ -80,7 +80,8 @@ export default {
 
   data () {
     return {
-      products: this.products
+      products: this.products,
+      baseUrl: 'https://base.altaxi.app/api/files/'
     }
   },
   async fetch () {
