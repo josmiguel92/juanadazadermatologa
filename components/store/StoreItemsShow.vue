@@ -17,7 +17,7 @@
         An error occurred :(
       </p>
       <div v-else>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 gap-y-12">
           <!-- product - start -->
           <div
             v-for="(item, index) in products"
