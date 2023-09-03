@@ -84,7 +84,8 @@ export default {
   data () {
     return {
       categories: this.categories,
-      mainCategory: this.filterCategory
+      mainCategory: this.filterCategory,
+      baseUrl: 'https://base.altaxi.app/api/files/'
     }
   },
   async fetch () {

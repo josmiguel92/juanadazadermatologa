@@ -52,7 +52,9 @@ export default {
   data () {
     return {
       posts: this.posts,
-      mainCategory: this.filterCategory
+      mainCategory: this.filterCategory,
+      baseUrl: 'https://base.altaxi.app/api/files/'
+
     }
   },
 
